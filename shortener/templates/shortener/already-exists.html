@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title %}
+{{ object.shortcode }} | {{ block.super }}
+{% endblock title %}
+
+{% block content %}
+
+
+    <div style =' margin: 150px ; text-align: center;display: block; margin-left: auto; margin-right: auto; margin-top: 300px;'>
+      <h1>Shortened URL Already Exists!!!!</h1>
+      <br>
+
+        <h4>Original URL : &nbsp; {{ object.url }}</h4>
+
+      <!-- <h5 style='color :#204051  '>Click Count : {{ object.ClickEvent.count }}</h5>  -->
+      <br>
+      <h3>Shortened URL : &nbsp; <a class="url-link" href="{{ object.get_short_url }}">{{ object.get_short_url }}</a></h3>
+
+      <a class="myButton" href="/" >+ New</a>
+
+    </div>
+
+
+
+
+{% endblock content %}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <title>URLworks.co | {% block title %}Short URL{% endblock title %}</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <link href="http://getbootstrap.com/examples/cover/cover.css" rel="stylesheet">
+
+  <style media="screen">
+    body {
+    background-color: #dee3e2;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQlxjjocyO0F1NVXnm6_w_RUWWO9RKxu2TbT9SJYH14ccuWnuH4&usqp=CAU);
+    background-repeat : no-repeat;
+    background-size: cover;
+    }
+    h1{
+    margin-top: 0;
+    font-size: 3rem;
+    font-family: 'Bangers', cursive;
+    color: #347474;
+    }
+    h3{
+    font-family: 'Montserrat', sans-serif;
+    color: #11999E;
+    }
+    p{
+    line-height: 2;
+    }
+
+    .bottom-container{
+    background-color: #204051;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    }
+    .myButton {
+    box-shadow: 3px 4px 0px 0px #91b8b3;
+    background:linear-gradient(to bottom, #768d87 5%, #61baba 100%);
+    background-color:#768d87;
+    border-radius:25px;
+    border:1px solid #566963;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:17px;
+    font-weight:bold;
+    padding:7px 25px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #2b665e;
+    }
+    .myButton:hover {
+    background:linear-gradient(to bottom, #61baba 5%, #768d87 100%);
+    background-color:#61baba;
+    }
+    .myButton:active {
+    position:relative;
+    top:1px;
+    }
+    .copyright{
+    color: #f9fcfb;
+    font-size: 0.75rem;
+    padding:30px 10px 100px 800px;
+
+    }
+    a{
+    color:#655c56;
+    margin:10px 20px;
+    text-decoration: none;
+    }
+    a:hover{
+    color: #f8eeee;
+    }
+  </style>
+
+  </head>
+  <body>
+        {% block content %}
+        {% endblock %}
+
+    <div class="bottom-container">
+      <p class = "copyright">© 2020 Divyanshi Singh.</p>
+    </div>
+  </body>
+</html>
